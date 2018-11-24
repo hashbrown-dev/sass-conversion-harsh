@@ -1,0 +1,33 @@
+
+
+@mixin color_spicy_mix{
+    color: $color_spicy_mix_approx;
+}
+
+@mixin border_left{
+    border-left: 1px solid $color_quill_gray_approx;
+}
+
+@mixin color_half_baked{
+    color: $color_half_baked_approx;
+}
+
+@mixin color_white{
+    background-color: $white;
+}
+
+@mixin font_1_9{
+    font-size: 1.999rem;
+}
+
+@mixin color_indian_khaki{
+    color: $color_indian_khaki_approx;
+}
+
+@mixin border_color_quill{
+    border-left: 1px solid $color_quill_gray_approx;
+}
+
+@mixin font_1_414{
+    font-size: 1.414rem;
+}

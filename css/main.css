@@ -58,7 +58,7 @@ header:after {
   }
 
   header nav > ul > li > a:last-child {
-    border-right: 1px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
   }
 
   section.focal,

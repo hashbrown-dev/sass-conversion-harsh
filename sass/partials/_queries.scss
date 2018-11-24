@@ -1,3 +1,5 @@
+@import "_mixin.scss";
+
 @media all and (min-width:701px) and (max-width:900px) {
     header {
         width: 700px;
@@ -7,7 +9,7 @@
 
     header h1 {
         width: 100%;
-        color: $color_spicy_mix_approx;
+        @include color_spicy_mix;
     }
 
     header:before,
@@ -17,7 +19,7 @@
 
     header h1 i.fa-lg {
         display: inline;
-        color: $color_spicy_mix_approx;
+        @include color_spicy_mix;
         vertical-align: baseline;
         float: none;
         font-size: 4rem;
@@ -51,13 +53,13 @@
         line-height: 2rem;
         min-height: 6rem;
         border: none;
-        border-left: 1px solid $color_quill_gray_approx;
+        @include border_left;
         padding: 1.0rem;
-        background-color: $white;
+        @include color_white;
     }
 
     header nav > ul > li > a:last-child {
-        border-right: 1px solid $color_quill_gray_approx;
+        @include border_left;
     }
 
     section.focal,
@@ -74,15 +76,15 @@
     }
 
     section.content2 h4 {
-        font-size: 1.414rem;
+        @include font_1_414;
     }
 
     section.content2 li {
-        font-size: 1.414rem;
+        @include font_1_414;
     }
 
     footer .fa-circle {
-        color: $color_half_baked_approx;
+        @include color_half_baked;
     }
 
     footer .col-2:last-child {
@@ -148,7 +150,7 @@
     header nav > ul > li {
         width: 20%;
         float: left;
-        background-color: $white;
+        @include color_white;
     }
 
     header nav > ul > li > a {
@@ -159,7 +161,7 @@
         border-left: 1px solid $color_quill_gray_approx;
         padding: 0 1.0rem;
         margin: 1.0rem 0;
-        background-color: $white;
+        @include color_white;
     }
 
     header nav > ul > li:first-child a {
@@ -205,21 +207,21 @@
     }
 
     section.content1 h3 {
-        font-size: 1.999rem;
+        @include font_1_9;
         font-weight: 100;
     }
 
     section.content1 h3 .fa-2x {
-        font-size: 1.999rem;
+        @include font_1_9;
         padding-right: 1rem;
     }
 
     section.content2 h4 {
-        font-size: 1.414rem;
+        @include font_1_414;
     }
 
     section.content2 li {
-        font-size: 1.414rem;
+        @include font_1_414;
     }
 
     section.content2 p {
@@ -228,7 +230,7 @@
     }
 
     footer .fa-circle {
-        color: $color_indian_khaki_approx;
+        @include color_indian_khaki;
     }
 
     footer h4[lang=ru] {
@@ -256,12 +258,12 @@
 
     header h1 {
         width: 100%;
-        color: $color_spicy_mix_approx;
+        @include color_spicy_mix;
     }
 
     header h1 i.fa-lg {
         display: inline;
-        color: $color_spicy_mix_approx;
+        @include color_spicy_mix;
         vertical-align: baseline;
         float: none;
         font-size: 4rem;
@@ -288,18 +290,18 @@
     header nav > ul > li {
         width: 20%;
         float: left;
-        background-color: $white;
+        @include color_white;
     }
 
     header nav > ul > li > a {
-        font-size: 1.414rem;
+        @include font_1_414;
         line-height: 2rem;
         min-height: 2rem;
         border: none;
-        border-left: 1px solid $color_quill_gray_approx;
+        @include border_color_quill;
         padding: 0 1.0rem;
         margin: 1.0rem 0;
-        background-color: $white;
+        @include color_white;
     }
 
     header nav > ul > li:first-child a {
@@ -357,20 +359,20 @@
     }
 
     section.content2 h4 {
-        font-size: 1.999rem;
+        @include font_1_9;
     }
 
     section.content2 li {
-        font-size: 1.999rem;
+        @include font_1_9;
     }
 
     section.content2 p {
-        font-size: 1.414rem;
+        @include font_1_414;
         font-weight: 400;
     }
 
     footer p {
-        font-size: 1.414rem;
+        @include font_1_414;
         letter-spacing: 0.2rem;
     }
 
@@ -379,7 +381,7 @@
     }
 
     footer .fa-circle {
-        color: $color_half_baked_approx;
+        @include color_half_baked;
     }
 
     footer h4[lang=en] {

@@ -1,29 +1,22 @@
 @import "_mixin.scss";
 
+
+/***********************************************
+                MEDIA QUERIES
+***********************************************/
+
 @media all and (min-width:701px) and (max-width:900px) {
-    header {
-        width: 700px;
-        margin: 0 auto;
-        min-height: 8rem;
-    }
+
+    @include header_710_900;
 
     header h1 {
         width: 100%;
         @include color_spicy_mix;
     }
 
-    header:before,
-    header:after {
-        width: 230px;
-    }
-
     header h1 i.fa-lg {
-        display: inline;
+        @include basic_h1_i_fa-lg;
         @include color_spicy_mix;
-        vertical-align: baseline;
-        float: none;
-        font-size: 4rem;
-        line-height: 6.3968rem;
     }
 
     header h1 i.fa-lg ~ span {
@@ -49,17 +42,13 @@
     }
 
     header nav > ul > li > a {
-        font-size: 1rem;
-        line-height: 2rem;
+        @include header_nav_ul_li_a;
+        @include font_1;
         min-height: 6rem;
-        border: none;
-        @include border_left;
-        padding: 1.0rem;
-        @include color_white;
     }
 
     header nav > ul > li > a:last-child {
-        @include border_left;
+        @include border_color_quill;
     }
 
     section.focal,
@@ -106,28 +95,17 @@
 
 
 @media all and (min-width:901px) and (max-width: 1400px) {
-    header {
-        width: 900px;
-        margin: 0 auto;
-    }
 
-    header:before,
-    header:after {
-        width: 300px;
-    }
+    @include header_901_1400;
 
     header h1 {
         width: 100%;
-        color: $color_casal_approx;
+        @include color_casal;
     }
 
     header h1 i.fa-lg {
-        display: inline;
-        color: $color_casal_approx;
-        vertical-align: baseline;
-        float: none;
-        font-size: 4rem;
-        line-height: 6.3968rem;
+        @include basic_h1_i_fa-lg;
+        @include color_casal;
     }
 
     header h1 i.fa-lg ~ span {
@@ -154,14 +132,8 @@
     }
 
     header nav > ul > li > a {
-        font-size: 1rem;
-        line-height: 2rem;
-        min-height: 2rem;
-        border: none;
-        border-left: 1px solid $color_quill_gray_approx;
-        padding: 0 1.0rem;
-        margin: 1.0rem 0;
-        @include color_white;
+        @include font_1;
+        @include header_nav_ul_li_a;
     }
 
     header nav > ul > li:first-child a {
@@ -246,15 +218,8 @@
 
 
 @media all and (min-width:1401px) {
-    header {
-        width: 1400px;
-        margin: 0 auto;
-    }
 
-    header:before,
-    header:after {
-        width: 450px;
-    }
+    @include header_1401;
 
     header h1 {
         width: 100%;
@@ -262,12 +227,8 @@
     }
 
     header h1 i.fa-lg {
-        display: inline;
         @include color_spicy_mix;
-        vertical-align: baseline;
-        float: none;
-        font-size: 4rem;
-        line-height: 6.3968rem;
+        @include basic_h1_i_fa-lg;
     }
 
     header h1 i.fa-lg ~ span {
@@ -294,14 +255,8 @@
     }
 
     header nav > ul > li > a {
+        @include header_nav_ul_li_a;
         @include font_1_414;
-        line-height: 2rem;
-        min-height: 2rem;
-        border: none;
-        @include border_color_quill;
-        padding: 0 1.0rem;
-        margin: 1.0rem 0;
-        @include color_white;
     }
 
     header nav > ul > li:first-child a {
@@ -393,5 +348,4 @@
     footer h4[lang=ru] {
         display: none;
     }
-
 }

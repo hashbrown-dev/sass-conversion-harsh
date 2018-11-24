@@ -1,33 +1,90 @@
-
-
-@mixin color_spicy_mix{
+@mixin color_spicy_mix {
     color: $color_spicy_mix_approx;
 }
 
-@mixin border_left{
-    border-left: 1px solid $color_quill_gray_approx;
-}
-
-@mixin color_half_baked{
+@mixin color_half_baked {
     color: $color_half_baked_approx;
 }
 
-@mixin color_white{
+@mixin color_white {
     background-color: $white;
 }
 
-@mixin font_1_9{
+@mixin color_casal {
+    color: $color_casal_approx;
+}
+
+@mixin font_1 {
+    font-size: 1rem;
+}
+
+@mixin font_1_414 {
+    font-size: 1.414rem;
+}
+
+@mixin font_1_9 {
     font-size: 1.999rem;
 }
 
-@mixin color_indian_khaki{
+@mixin color_indian_khaki {
     color: $color_indian_khaki_approx;
 }
 
-@mixin border_color_quill{
+@mixin border_color_quill {
     border-left: 1px solid $color_quill_gray_approx;
 }
 
-@mixin font_1_414{
-    font-size: 1.414rem;
+@mixin header_710_900 {
+    header {
+        width: 700px;
+        margin: 0 auto;
+        min-height: 8rem;
+
+        header:before,
+        header:after {
+            width: 230px;
+        }
+    }
+}
+
+@mixin header_901_1400 {
+    header {
+        width: 900px;
+        margin: 0 auto;
+
+        header:before,
+        header:after {
+            width: 300px;
+        }
+    }
+}
+
+@mixin header_1401 {
+    header {
+        width: 1400px;
+        margin: 0 auto;
+
+        header:before,
+        header:after {
+            width: 450px;
+        }
+    }
+}
+
+@mixin basic_h1_i_fa-lg {
+    display: inline;
+    vertical-align: baseline;
+    float: none;
+    font-size: 4rem;
+    line-height: 6.3968rem;
+}
+
+@mixin header_nav_ul_li_a {
+    line-height: 2rem;
+    min-height: 2rem;
+    border: none;
+    padding: 0 1.0rem;
+    margin: 1.0rem 0;
+    border-left: 1px solid $color_quill_gray_approx;
+    background-color: $white;
 }

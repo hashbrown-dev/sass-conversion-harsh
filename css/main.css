@@ -1,9 +1,16 @@
 @charset "UTF-8";
+/***********************************************
+                MEDIA QUERIES
+***********************************************/
 @media all and (min-width: 701px) and (max-width: 900px) {
   header {
     width: 700px;
     margin: 0 auto;
     min-height: 8rem;
+  }
+  header header:before,
+header header:after {
+    width: 230px;
   }
 
   header h1 {
@@ -11,18 +18,13 @@
     color: #7c593c;
   }
 
-  header:before,
-header:after {
-    width: 230px;
-  }
-
   header h1 i.fa-lg {
     display: inline;
-    color: #7c593c;
     vertical-align: baseline;
     float: none;
     font-size: 4rem;
     line-height: 6.3968rem;
+    color: #7c593c;
   }
 
   header h1 i.fa-lg ~ span {
@@ -48,13 +50,15 @@ header:after {
   }
 
   header nav > ul > li > a {
-    font-size: 1rem;
     line-height: 2rem;
-    min-height: 6rem;
+    min-height: 2rem;
     border: none;
+    padding: 0 1rem;
+    margin: 1rem 0;
     border-left: 1px solid #d4d4d4;
-    padding: 1rem;
     background-color: #fff;
+    font-size: 1rem;
+    min-height: 6rem;
   }
 
   header nav > ul > li > a:last-child {
@@ -106,9 +110,8 @@ footer h4[lang=ru] {
     width: 900px;
     margin: 0 auto;
   }
-
-  header:before,
-header:after {
+  header header:before,
+header header:after {
     width: 300px;
   }
 
@@ -119,11 +122,11 @@ header:after {
 
   header h1 i.fa-lg {
     display: inline;
-    color: #3a5e63;
     vertical-align: baseline;
     float: none;
     font-size: 4rem;
     line-height: 6.3968rem;
+    color: #3a5e63;
   }
 
   header h1 i.fa-lg ~ span {
@@ -154,9 +157,9 @@ header:after {
     line-height: 2rem;
     min-height: 2rem;
     border: none;
-    border-left: 1px solid #d4d4d4;
     padding: 0 1rem;
     margin: 1rem 0;
+    border-left: 1px solid #d4d4d4;
     background-color: #fff;
   }
 
@@ -244,9 +247,8 @@ footer h4[lang=en] {
     width: 1400px;
     margin: 0 auto;
   }
-
-  header:before,
-header:after {
+  header header:before,
+header header:after {
     width: 450px;
   }
 
@@ -256,8 +258,8 @@ header:after {
   }
 
   header h1 i.fa-lg {
-    display: inline;
     color: #7c593c;
+    display: inline;
     vertical-align: baseline;
     float: none;
     font-size: 4rem;
@@ -288,14 +290,14 @@ header:after {
   }
 
   header nav > ul > li > a {
-    font-size: 1.414rem;
     line-height: 2rem;
     min-height: 2rem;
     border: none;
-    border-left: 1px solid #d4d4d4;
     padding: 0 1rem;
     margin: 1rem 0;
+    border-left: 1px solid #d4d4d4;
     background-color: #fff;
+    font-size: 1.414rem;
   }
 
   header nav > ul > li:first-child a {
@@ -663,9 +665,5 @@ footer h4[lang=ar],
 footer h4[lang=ru] {
   display: none;
 }
-
-/***********************************************
-                MEDIA QUERIES
-***********************************************/
 
 /*# sourceMappingURL=main.css.map */

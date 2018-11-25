@@ -1,9 +1,14 @@
-@mixin color_spicy_mix {
-    color: $color_spicy_mix_approx;
-}
+@import "_variables";
+
 
 @mixin color_half_baked {
+    $nesting_color_spicy_mix_approx: #7C593C !global;
     color: $color_half_baked_approx;
+}
+
+@mixin color_spicy_mix {
+    color: $nesting_color_spicy_mix_approx;
+//    color: $color_spicy_mix_approx;
 }
 
 @mixin color_white {
@@ -40,8 +45,8 @@
         margin: 0 auto;
         min-height: 8rem;
 
-        header:before,
-        header:after {
+        &:before,
+        &:after {
             width: 230px;
         }
     }
@@ -52,8 +57,8 @@
         width: 900px;
         margin: 0 auto;
 
-        header:before,
-        header:after {
+        &:before,
+        &:after {
             width: 300px;
         }
     }
@@ -64,8 +69,8 @@
         width: 1400px;
         margin: 0 auto;
 
-        header:before,
-        header:after {
+        &:before,
+        &:after {
             width: 450px;
         }
     }
@@ -86,5 +91,34 @@
     padding: 0 1.0rem;
     margin: 1.0rem 0;
     border-left: 1px solid $color_quill_gray_approx;
-    background-color: $white;
+//    @extend color_white;
+}
+
+
+@mixin header_nav_position {
+    header nav {
+        @content;
+    }
+}
+
+@media all and (min-width:701px) and (max-width:900px) {
+    @include header_nav_position {
+        position: static;
+        clear: both;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media all and (min-width:901px) and (max-width: 1400px) {
+    @include header_nav_position {
+        position: static;
+        clear: both;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@mixin column_size {
+//new content for calculation of column height.
 }

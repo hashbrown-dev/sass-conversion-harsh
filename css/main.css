@@ -1,4 +1,36 @@
 @charset "UTF-8";
+@media all and (min-width: 701px) and (max-width: 900px) {
+  header nav {
+    position: static;
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+}
+@media all and (min-width: 901px) and (max-width: 1400px) {
+  header nav {
+    position: static;
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+}
+@media all and (min-width: 701px) and (max-width: 900px) {
+  header nav {
+    position: static;
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+}
+@media all and (min-width: 901px) and (max-width: 1400px) {
+  header nav {
+    position: static;
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+}
 /***********************************************
                 MEDIA QUERIES
 ***********************************************/
@@ -8,14 +40,13 @@
     margin: 0 auto;
     min-height: 8rem;
   }
-  header header:before,
-header header:after {
+  header:before, header:after {
     width: 230px;
   }
 
   header h1 {
     width: 100%;
-    color: #7c593c;
+    color: #7C593C;
   }
 
   header h1 i.fa-lg {
@@ -24,7 +55,7 @@ header header:after {
     float: none;
     font-size: 4rem;
     line-height: 6.3968rem;
-    color: #7c593c;
+    color: #7C593C;
   }
 
   header h1 i.fa-lg ~ span {
@@ -35,13 +66,6 @@ header header:after {
     1 lines of 3.998 * 1.6 = 6.3968
     **/
     text-align: left;
-  }
-
-  header nav {
-    position: static;
-    clear: both;
-    width: 100%;
-    padding: 0;
   }
 
   header nav > ul > li {
@@ -56,7 +80,6 @@ header header:after {
     padding: 0 1rem;
     margin: 1rem 0;
     border-left: 1px solid #d4d4d4;
-    background-color: #fff;
     font-size: 1rem;
     min-height: 6rem;
   }
@@ -110,8 +133,7 @@ footer h4[lang=ru] {
     width: 900px;
     margin: 0 auto;
   }
-  header header:before,
-header header:after {
+  header:before, header:after {
     width: 300px;
   }
 
@@ -139,13 +161,6 @@ header header:after {
     text-align: left;
   }
 
-  header nav {
-    position: static;
-    clear: both;
-    width: 100%;
-    padding: 0;
-  }
-
   header nav > ul > li {
     width: 20%;
     float: left;
@@ -160,7 +175,6 @@ header header:after {
     padding: 0 1rem;
     margin: 1rem 0;
     border-left: 1px solid #d4d4d4;
-    background-color: #fff;
   }
 
   header nav > ul > li:first-child a {
@@ -247,18 +261,17 @@ footer h4[lang=en] {
     width: 1400px;
     margin: 0 auto;
   }
-  header header:before,
-header header:after {
+  header:before, header:after {
     width: 450px;
   }
 
   header h1 {
     width: 100%;
-    color: #7c593c;
+    color: #7C593C;
   }
 
   header h1 i.fa-lg {
-    color: #7c593c;
+    color: #7C593C;
     display: inline;
     vertical-align: baseline;
     float: none;
@@ -276,13 +289,6 @@ header header:after {
     text-align: left;
   }
 
-  header nav {
-    position: static;
-    clear: both;
-    width: 100%;
-    padding: 0;
-  }
-
   header nav > ul > li {
     width: 20%;
     float: left;
@@ -296,7 +302,6 @@ header header:after {
     padding: 0 1rem;
     margin: 1rem 0;
     border-left: 1px solid #d4d4d4;
-    background-color: #fff;
     font-size: 1.414rem;
   }
 
@@ -463,7 +468,7 @@ ul {
 
 .bg-focal {
   background-color: #c9a689;
-  color: #7c593c;
+  color: #7C593C;
 }
 
 .bg-content1 {
@@ -560,14 +565,14 @@ header nav > ul > li > a {
 
 header nav > ul > li > a:hover {
   font-weight: 700;
-  color: #7c593c;
+  color: #7C593C;
 }
 
 /***********************************************
                 CONTENT
 ***********************************************/
 header h1 {
-  color: #7c593c;
+  color: #7C593C;
   letter-spacing: 0.1rem;
 }
 
@@ -643,7 +648,7 @@ header h1 i.fa-lg ~ span {
 footer h4 {
   font-size: 1.414rem;
   padding: 0.5rem 2rem;
-  color: #7c593c;
+  color: #7C593C;
 }
 
 footer p {
